@@ -21,7 +21,7 @@ public class ControllerLineRenderer : MonoBehaviour
             renderLaserToHit(laserPointer, hit);
 
             GameObject pointedObject = hit.collider.gameObject;
-            pointedObject.transform.SendMessage("OnPointerEnter");
+            //            pointedObject.transform.SendMessage("OnPointerEnter");
 
         }
         else
