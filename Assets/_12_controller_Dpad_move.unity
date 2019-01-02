@@ -216,55 +216,59 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4963038606732478, guid: 19dd2919f203b7545ba161b2fc6deebc, type: 2}
       propertyPath: m_RootOrder
-      value: 4
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 19dd2919f203b7545ba161b2fc6deebc, type: 2}
   m_IsPrefabAsset: 0
---- !u!1 &999394951
+--- !u!1 &900202730 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1265028845304782, guid: 19dd2919f203b7545ba161b2fc6deebc,
+    type: 2}
+  m_PrefabInternal: {fileID: 900202729}
+--- !u!4 &900202731 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4753027883884078, guid: 19dd2919f203b7545ba161b2fc6deebc,
+    type: 2}
+  m_PrefabInternal: {fileID: 900202729}
+--- !u!1 &1021481257
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 999394954}
-  - component: {fileID: 999394953}
-  - component: {fileID: 999394952}
+  - component: {fileID: 1021481261}
+  - component: {fileID: 1021481260}
+  - component: {fileID: 1021481259}
+  - component: {fileID: 1021481258}
   m_Layer: 0
-  m_Name: PadInputText
+  m_Name: Plane
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!102 &999394952
-TextMesh:
-  serializedVersion: 3
+--- !u!64 &1021481258
+MeshCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 999394951}
-  m_Text: PadTouchInfo
-  m_OffsetZ: 0
-  m_CharacterSize: 1
-  m_LineSpacing: 1
-  m_Anchor: 4
-  m_Alignment: 1
-  m_TabSize: 4
-  m_FontSize: 48
-  m_FontStyle: 0
-  m_RichText: 1
-  m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-  m_Color:
-    serializedVersion: 2
-    rgba: 4294584340
---- !u!23 &999394953
+  m_GameObject: {fileID: 1021481257}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 0
+  m_CookingOptions: 14
+  m_SkinWidth: 0.01
+  m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!23 &1021481259
 MeshRenderer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 999394951}
+  m_GameObject: {fileID: 1021481257}
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
@@ -274,7 +278,7 @@ MeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RenderingLayerMask: 4294967295
   m_Materials:
-  - {fileID: 10100, guid: 0000000000000000e000000000000000, type: 0}
+  - {fileID: 2100000, guid: 8a5ad6c70570b4e4cabd06a1727cd69d, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -294,18 +298,25 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
---- !u!4 &999394954
+--- !u!33 &1021481260
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1021481257}
+  m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!4 &1021481261
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 999394951}
+  m_GameObject: {fileID: 1021481257}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -7.94, y: 1.2, z: 12}
-  m_LocalScale: {x: 0.2, y: 0.2, z: 0.2}
+  m_LocalPosition: {x: 0, y: 0, z: 0.5}
+  m_LocalScale: {x: 10, y: 10, z: 10}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1266924069
 GameObject:
@@ -331,11 +342,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 1266924069}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d2759b6fcbc23c54b8e64965b2a309f8, type: 3}
+  m_Script: {fileID: 11500000, guid: ac5872021e70ac44fb054564cd4ab337, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   dpadInputMesh: {fileID: 1278527894}
-  padInfoMesh: {fileID: 999394952}
+  targetPlayerObj: {fileID: 900202730}
+  forwardSpeed: 10
+  rotationSpeed: 20
 --- !u!4 &1266924071
 Transform:
   m_ObjectHideFlags: 0
@@ -347,7 +360,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1278527893
 GameObject:
@@ -428,10 +441,10 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1278527893}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 3.8, y: 1.41, z: 12}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 3.8, y: -0.19000006, z: 12}
   m_LocalScale: {x: 0.2, y: 0.2, z: 0.2}
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 1
+  m_Father: {fileID: 900202731}
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
