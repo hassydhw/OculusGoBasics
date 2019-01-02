@@ -28,6 +28,8 @@ OculusGo向けの基本的なサンプル、Gaze/Laser/コントローラ入力�
 * sample8、GameObjectとuGUIが共存したシーンの操作の例
 * sample9、コントローラのボタンやタッチパッドの入力例
 * sample10、コントローラの回転や加速度を利用する例
+* sample11、コントローラのPadで疑似的に4方向の入力として取得
+* sample12、Pad左右で回転、Pad上もしくはトリガーで前進、という移動の例
 
 
 
