@@ -50,7 +50,7 @@ public class ButtonInputManager : MonoBehaviour
         }
 
 
-        //タッチパッドにさわったばあいはその位置を表示、パッドの中心が0,0
+        //タッチパッドにさわったばあいはその位置を表示、パッドの中心が0,0、上下、左右に-1から1の間
         if (OVRInput.Get(OVRInput.Touch.PrimaryTouchpad))
         {
             //            padInfoMesh.text = "pad touching";
