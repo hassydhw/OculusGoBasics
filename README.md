@@ -12,11 +12,11 @@ OculusGo向けの基本的なサンプル、Gaze/Laser/コントローラ入力�
 * Oculus Go
 
 ## Unityバージョン
-* 2018.2.8.f1
+* 2018.2.8.f1  
 2018.2系なら問題なく動くと思います
 
 ## 使用ライブラリ
-* Oculus Utilities v1.32.0
+* Oculus Utilities v1.32.0  
   うちVRフォルダさえあればとりあえずは大丈夫
 
 ## 簡単な使用方法
@@ -30,6 +30,12 @@ OculusGo向けの基本的なサンプル、Gaze/Laser/コントローラ入力�
 * sample10、コントローラの回転や加速度を利用する例
 * sample11、コントローラのPadで疑似的に4方向の入力として取得
 * sample12、Pad左右で回転、Pad上もしくはトリガーで前進、という移動の例
+
+## 注意事項
+* テクスチャ素材をLFSで管理しているので､zipでダウンロードするとテクスチャが含まれません（どうもGithubの仕様らしいです）
+* Github Desktopをつかってプロジェクトを入手するか、以下のコマンドでcloneするとテクスチャ素材も入手できます。  
+git clone https://github.com/hassydhw/OculusGoBasics.git
+* ちなみにcloneでエラーが出る場合は git-lfsコマンドがちゃんとインストールされているか確認しましょう。
 
 ## ビルド時にエラーが出る場合
 アセットストアから、Oculus Ingegrationをダウンロードして取り込みなおしてみてください。
