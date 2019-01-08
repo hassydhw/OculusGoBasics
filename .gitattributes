@@ -9,7 +9,6 @@
 # Image formats
 *.psd filter=lfs diff=lfs merge=lfs -text
 *.bmp filter=lfs diff=lfs merge=lfs -text
-*.tga filter=lfs diff=lfs merge=lfs -text
 *.tiff filter=lfs diff=lfs merge=lfs -text
 *.iff filter=lfs diff=lfs merge=lfs -text
 *.pict filter=lfs diff=lfs merge=lfs -text
